@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/morse.css">
+    <link rel="stylesheet" href="./style/global.css">
+    
+   
+    
+    
+    <title>Lecteur Audio - Hacking Theme</title>
+</head>
+
+
+
+<body>
+   
+    <div class="background">
+        <div class="audio-player">
+            <h1>Ecouter l'audio</h1>
+            <audio controls>
+                <source src="audio/audio_morse.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <div class="input-section">
+                <input type="text" id="user-input" placeholder="Entrer le code">
+                <button onclick="checkInput()">Vérifier</button>
+                <p id="feedback"></p>
+                <button id="next-step-btn" style="display: none;">Étape suivante</button>
+            </div>
+        </div>
+        <div class="indice">
+            <button id="hint-btn"
+                onclick="alert('Il y a plusieurs manières de trouver le code (aller au fond des choses)')"> Indice
+            </button>
+        </div>
+    </div>
+    <script src="js/morse.js"></script>
+    
+</body>
+
+
+
+
+</html>

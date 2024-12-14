@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.min.css" >
+    <link rel="stylesheet" href="./style/profil-game.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/global.css">
+    <title>Profils</title>    
+</head>
+
+<body>
+
+    <p id="indice">indice Penser bien au détails, N'hésiter pas a utiliser le zoom</p>
+  <button id="afficherIndice" style="display: none;">Afficher l'indice</button>
+
+  <script>
+    function afficherBouton() {
+      document.getElementById("afficherIndice").style.display = "block";
+    }
+
+    function afficherIndice() {
+      document.getElementById("indice").style.display = "block";
+    }
+
+    // Appeler la fonction pour afficher le bouton après 5 minutes (300000 millisecondes)
+    setTimeout(afficherBouton, 300000);
+
+    // Écouter le clic sur le bouton pour afficher l'indice
+    document.getElementById("afficherIndice").addEventListener("click", afficherIndice);
+  </script>
+
+
+    <div class="mt-5 container text-center">
+        <div class="row">
+          <div class="col">
+            <h2>Profil 1</h2>
+            <a href="./ressources/profil 1 lvl moyen.pdf" target="_blank" title="Cliquez pour voir le PDF">
+                <img src="./ressources/photo_1.jpg" alt="Aperçu du fichier PDF">
+            </a>
+          </div>
+          <div class="col">
+            <h2>Profil 2</h2>
+            <a href="./ressources/profil 2 lvl moyen.pdf" target="_blank" title="Cliquez pour voir le PDF">
+                <img src="./ressources/photo_2.jpg" alt="Aperçu du fichier PDF">
+            </a>
+          </div>
+          <div class="col">
+            <h2>Profil 3</h2>
+            <a href="./ressources/profil 3 lvl débutant.pdf" target="_blank" title="Cliquez pour voir le PDF">
+                <img src="./ressources/photo_3.jpg" alt="Aperçu du fichier PDF">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mt-5 container text-center">
+        <div class="row">
+          <div class="col">
+            <h2>Profil 4</h2>
+            <a href="./ressources/profil 4 lvl débutant.pdf" target="_blank" title="Cliquez pour voir le PDF">
+                <img src="./ressources/photo_4.jpg" alt="Aperçu du fichier PDF">
+            </a>
+          </div>
+          <div class="col">
+            <h2>Profil 5</h2>
+            <a href="./ressources/profil 5 lvl expert.pdf" target="_blank" title="Cliquez pour voir le PDF">
+                <img src="./ressources/photo_5.jpg" alt="Aperçu du fichier PDF">
+            </a>
+          </div>
+          <div class="col">
+            <h2>Profil 6</h2>
+            <a href="./ressources/profil 6 lvl expert.pdf" target="_blank" title="Cliquez pour voir le PDF">
+                <img src="./ressources/photo_6.jpg" alt="Aperçu du fichier PDF">
+            </a>
+          </div>
+        </div>
+      </div>
+       
+</body>
+
+
+</html>

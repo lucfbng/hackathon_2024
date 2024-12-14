@@ -1,0 +1,117 @@
+.corps {
+    font-family: Arial, sans-serif;
+    margin: 0;  
+    padding: 0;
+    background-color: #121234;
+    color: #fff;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    h1 {
+      color: #f57c00;
+      text-align: center;
+    }
+
+    #quiz-container {
+      display: flex;
+      flex-direction: column; /* Aligne les éléments verticalement */
+      align-items: center; /* Centre les éléments horizontalement */
+      justify-content: center; /* Centre verticalement */
+      width: 90%; /* Limite la largeur pour une meilleure lisibilité */
+      max-width: 800px; /* Définit une largeur maximale */
+      background-color: #242446;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    #start-button,
+    #submit-answer,
+    #restart-button,
+    #validate-password {
+      /* ... autres styles ... */
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #afficherIndice {
+      display: none;
+      background-color: #545250e3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      color: #f57c00;
+    }
+
+    .result {
+      font-weight: bold;
+    }
+
+    .option {
+      background-color: #242446;
+      border: 1px solid #f57c00;
+      padding: 10px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .option:hover {
+      background-color: #363658;
+    }
+
+    .correct-answers {
+      margin-top: 20px;
+      font-style: italic;
+      color: #f57c00;
+      text-align: center;
+    }
+
+    .error {
+      color: #f57c00;
+      font-size: 0.9em;
+    }
+
+    #indice {
+      display: none;
+      text-align: center;
+    }
+
+    #start-button,
+    #submit-answer,
+    #restart-button,
+    #validate-password,
+    #afficherIndice {
+      background-color: #f57c00;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    
+    #submit-answer {
+      margin-left: 10px; /* Décale le bouton "Valider" plus à droite */
+    }
+
+    #user-answer {
+      margin-left: 50px; /* Décale la barre de saisie "Votre réponse" vers la droite */
+    }

@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 60px 0 0 0; /* Ajustez 60px à la hauteur réelle de votre header */
+    display: flex;
+    flex-direction: column; /* Permet d'empiler les éléments verticalement */
+    min-height: 100vh; /* S'assure que le body prend au moins toute la hauteur de l'écran */
+
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-image: url(../icons/Group.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-color: rgb(22, 29, 56);
+    background-position-x: right;
+    background-position-y: 50%;
+}
+.background {
+    flex: 1; /* Force cette section à occuper tout l'espace disponible entre le header et le footer */
+}
+
+i {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #0f0;
+    pointer-events: none;
+    animation: animate 2s linear forwards;
+
+}
+
+div>h1 {
+    color: rgb(255, 150, 0)
+}
+
+
+
+.audio-player {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 40px;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Section d'entrée utilisateur */
+.input-section {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid rgb(255, 150, 0);
+    border-radius: 5px;
+    background-color: #111;
+    color: rgb(255, 150, 0);
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 150, 0, );
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: rgb(255, 150, 0);
+}
+
+.indice {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#next-step-btn {
+    margin-top: 10px;
+    display: none;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+    }
+}
