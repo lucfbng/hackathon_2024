@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color: white;
+}
+
+html {
+    background: linear-gradient(180deg, rgba(49,62,116,1) 0%, rgba(21,27,54,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero {
+    background-image: url(./assets/img/path.svg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
