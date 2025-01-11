@@ -8,7 +8,7 @@ html {
   /* --main-color: #9eff00; */
   --main-color: rgba(236, 104, 52, 1);
   --main-hover-color: rgb(197, 85, 41, 1);
-  --secondary-color: #1b1b1b;
+  --secondary-color: rgb(27, 27, 27);
   --bg-color: rgb(22, 29, 56);
   --line-color: rgba(236, 104, 52, 0.178);
 }

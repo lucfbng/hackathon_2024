@@ -1,18 +1,15 @@
 #hero-container {
-  border-right: 1px solid var(--line-color);
-  border-left: 1px solid var(--line-color);
-  border-bottom: 1px solid var(--line-color);
   display: flex;
   flex-direction: column;
   justify-items: center;
   margin: auto;
   max-width: 1600px;
-  height: calc(100vh - 100px);
+  height: calc(100vh + 80px);
   background-image: url(../icons/Group.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: right;
+  background-position: right top;
 }
 
 /* H1 */
@@ -115,7 +112,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1370px) {
   .hero-item {
     margin: 5rem auto 2rem auto;
   }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/team.css">
+    <script src="./js/html-script.js"></script>
 
     <title>Escape-game</title>
     <link rel="icon" type="image/x-icon" href="./icons/logo-mns.svg">
@@ -16,27 +17,23 @@
 <body>
     <!-- NAVIGATION -->
     <header>
-        <div class="nav-all-item">
-            <div id="nav-logo">
-                <a href="./index.html"><img class="logo-navbar" src="./icons/logo-mns.svg" alt="logo"></img></a>
-            </div>
-            <nav>
-                <ul id="nav-conatainer">
-                    <li class="nav-item">
-                        <a class="hover-for-a" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="hover-for-a" href="./team.html">La TEAM des RAN-gers du code</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <nav>
+            <ul class="sidebar">
+                <li class="close-menu-button"onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./team.html">Les Devs</a></li>
+            </ul>
+            <ul>
+                <li><a href="./index.html"><img class="mns-logo" src="./icons/logo-mns.svg" alt="mns-logo"></a></li>
+                <li class="burg-menu"><a href="#" class="menu-text" onclick="showSidebar()">MENU</a></li>
+                <li class="menu-button burg-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
 
     <!-- TEAM -->
     <section id="service-header">
         <div class="title-service">
-            <h2>Les RAN'gers du code</h2>
+            <h2>Les RANGERS du code</h2>
         </div>
     </section>
     <section id="photo-equipe">
@@ -44,54 +41,67 @@
     </section>
     <section id="card-service">
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>AXEL</h3>
             <p>RAN4</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>OCEANE</h3>
             <p>RAN2</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>FABRICE</h3>
             <p>RAN4</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>NOEMIE</h3>
             <p>RAN4</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>JORDANE</h3>
             <p>RAN1</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>NINE</h3>
             <p>RAN1</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>JULIAN</h3>
             <p>RAN2</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>HELENE</h3>
             <p>RAN4</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>CHRISTOPHER</h3>
             <p>RAN3</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>OHARA</h3>
             <p>RAN3</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>OLIVIER</h3>
             <p>RAN3</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="#">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>ZINEDINE</h3>
             <p>RAN1</p>
         </div>
         <div class="card-service glassm-2">
+            <div class="github-link" ><a href="https://github.com/lucfbng" target="_blank">Son Github <img class ="arrow-icon"src="./icons/arrow-right-solid.svg" alt="github-link"></a></div>
             <h3>LUC</h3>
             <p>RAN1</p>
         </div>
@@ -105,7 +115,7 @@
                 <div id="footer-nav-list">
                     <ul>
                         <li class="footer-nav-item">
-                            <a class="hover-for-a" href="./index.html">Home</a>
+                            <a class="hover-for-a" href="./index.html">Accueil</a>
                         </li>
                         <li class="footer-nav-item">
                             <a class="hover-for-a" href="./team.html">L'équipe</a>
