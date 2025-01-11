@@ -101,7 +101,7 @@
     justify-items: center;
     margin: auto;
     max-width: 1600px;
-    height: calc(100vh + 80px);
+    height: 100vh;
     background-image: url(../icons/Group.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,7 +227,7 @@
 
 /* FOOTER */
 #footer-container {
-    position: fixed;
+    position: static;
     bottom: 0;
     background-color: var(--main-color);
     display: flex;
@@ -529,10 +529,9 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 5%;
-    margin-bottom: 2%;
     gap: 20px;
-    max-width: 1920px;
-    height: calc(100vh - 250px);
+    max-width: 100%;
+    max-height: max-content;
   }
   
 /* NAME CARD */
@@ -550,12 +549,10 @@
 }
 
 .card-service h3 {
-  margin-top: 40px;
   font-size: 2rem;
 }
 
 .card-service p {
-  margin-top: 50px;
   font-size: 1.5rem;
 }
 /* HOVER GITHUB WITH PHOTO */
@@ -682,4 +679,81 @@
 }
 .github-link {
   display: none;
+}
+
+@media (max-width: 1610px) {
+    #card-service {
+        max-width: 100%;
+        margin: 5% auto 0px auto;
+    }
+    .card-service {
+      width: 200px;
+      height: 200px;
+    }
+    .card-service h3 {
+      font-size: 1.75rem;
+    }
+    
+    .card-service p {
+      font-size: 1.25rem;
+    }
+    .card-service:hover .github-link {
+        margin-top: -150px;
+        padding: 10px 15px;
+      }
+}
+@media (max-width: 770px) {
+    #card-service {
+        max-width: 100%;
+        margin: 5% auto 0px auto;
+    }
+    .card-service {
+      width: 150px;
+      height: 150px;
+    }
+    .card-service h3 {
+      font-size: 1.25rem;
+    }
+    
+    .card-service p {
+      font-size: 0.75rem;
+    }
+    .card-service:hover .github-link {
+        margin-top: -105px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+      }
+      .arrow-icon {
+        width: 8px;
+      }
+}
+@media (max-width: 432px) {
+    .photo-equipe {
+        width: 90%;
+    }
+    #card-service {
+        max-width: 100%;
+        margin: 5% auto 0px auto;
+    }
+    .card-service {
+      width: 90px;
+      height: 90px;
+    }
+    .card-service h3 {
+      font-size: 0.75rem;
+    }
+    
+    .card-service p {
+      font-size: 0.5rem;
+    }
+    .card-service:hover .github-link {
+        margin-top: -60px;
+        padding: 3px 6px;
+        font-size: 0.5rem;
+        border: 1px solid black;
+      }
+      .arrow-icon {
+        width: 6px;
+      }
+}
 }
